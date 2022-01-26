@@ -104,3 +104,43 @@ int main() {
     }
     return 0;
 }
+
+//pattern
+    *
+   **
+  ***
+ ****
+*****
+int main() {
+    int n = 5;
+    cin >> n;
+   //cout << n;
+    int count = 1;
+    int row = 1;
+    char val = 'A';
+    
+    
+    while(row <=n){
+        int space = n - row; 
+        // print space 
+        while(space){
+            cout << " ";
+            space --;
+        }
+        
+        
+        //print star
+        int col=1;
+        //count = i;
+        while(col<=row){
+            // char ch = 'A' + i + j -2;
+            //char ch = 'A' + i -1;
+            cout << "*";
+            col++;
+            //count++;
+        }       
+        cout << "\n";
+        row ++;
+    }
+    return 0;
+}
